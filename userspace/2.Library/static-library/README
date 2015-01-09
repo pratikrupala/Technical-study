@@ -1,0 +1,5 @@
+Steps for compilation
+gcc -c white.c
+gcc -c black.c
+ar crv libwb.a black.o white.o
+gcc -o main main.c -L. -lwb
