@@ -1,0 +1,5 @@
+Steps for compilation:
+gcc -fPIC -c white.c -o white.o
+gcc -fPIC -c black.c -o black.o
+gcc -shared -o libwb.so white.o black.o
+gcc -o testlib main.c -lwb -L/home/prupala/tech-study/Technical-study/userspace/2.Library/shared-library -Wl,-rpath=/home/prupala/tech-study/Technical-study/userspace/2.Library/shared-library
