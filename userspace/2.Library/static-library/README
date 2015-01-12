@@ -1,5 +1,5 @@
 Steps for compilation
-gcc -c white.c
-gcc -c black.c
-ar crv libwb.a black.o white.o
-gcc -o main main.c -L. -lwb
+[1] make 
+	To generate static library as well as test program
+[2] make clean
+	To remove object files as well as executable and library
