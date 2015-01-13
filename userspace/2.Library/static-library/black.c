@@ -2,5 +2,5 @@
 
 void black(char *s)
 {
-	printf("Black is %s\n", s);
+	printf("Color is %s\n", s);
 }

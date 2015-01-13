@@ -28,8 +28,11 @@ OBJS = $(SRC:.c=.o)
 # define the output
 TARGET = staticlib-test
 
+# define library target
+LIBTARGET = staticlibrary
+
 # define the target name of library
-LIBTARGET = libstatic.a
+LIBTARGET_NAME = libstatic.a
 
 # define extra variables needed
 AR = ar crv
@@ -37,10 +40,10 @@ AR = ar crv
 all: $(LIBTARGET) $(TARGET)
 
 $(LIBTARGET) : $(LIBOBJS)
-	$(AR) $@ $(LIBOBJS)
+	$(AR) $(LIBTARGET_NAME) $(LIBOBJS)
 
 $(TARGET): $(OBJS) $(LIBTARGET)
 	$(CC) $(CFLAGS) $(INCLUDES) -o $(TARGET) $(OBJS) $(LFLAGS) $(LIBS)
 
 clean:
-	rm -rf $(OBJS) $(LIBOBJS) $(LIBTARGET) $(TARGET)
+	rm -rf $(OBJS) $(LIBOBJS) $(LIBTARGET_NAME) $(TARGET)

@@ -1,7 +1,9 @@
 Steps for compilation
 [1] make 
 	To generate static library as well as test program
-[2] make clean
+[2] make staticlibrary
+	To generate only static library
+[3] make clean
 	To remove object files as well as executable and library
 
 Steps to run program
