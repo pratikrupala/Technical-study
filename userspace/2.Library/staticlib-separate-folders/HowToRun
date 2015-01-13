@@ -1,0 +1,12 @@
+Steps to run program
+[1] ./src/staticlib-test
+        Then enter any number. If number is odd, "Color is black" is printed else "Color is white" is printed.
+
+Example:
+
+[root@localhost staticlib-separate-folders]# ./src/staticlib-test
+Enter the value:1
+Color is black
+[root@localhost staticlib-separate-folders]# ./src/staticlib-test
+Enter the value:2
+Color is white
