@@ -1,0 +1,7 @@
+Steps to compile
+[1] make
+	To compile shared library as well as test program
+[2] make dynamiclibrary
+	To generate only shared library
+[3] make clean
+	To clean up everything.

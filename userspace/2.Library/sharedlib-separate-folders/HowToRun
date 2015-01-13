@@ -1,0 +1,11 @@
+Steps to run program
+[1] ./src/sharedlib-test
+        Then enter any number. If number is odd, "Color is black" is printed else "Color is white" is printed.
+
+Example:
+
+[root@localhost sharedlib-separate-folders]# ./src/sharedlib-test
+Enter the value:1
+Color is black
+[root@localhost sharedlib-separate-folders]# ./src/sharedlib-test
+Enter the value:2
