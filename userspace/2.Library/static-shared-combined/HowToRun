@@ -1,0 +1,8 @@
+Steps to run program
+[1] ./src/libtest
+	It calls one fuction from each library(static and shared) and print somthing from each.
+
+Example:
+[root@localhost static-shared-combined]# ./src/libtest
+black is from dynamic library
+white is from static library
