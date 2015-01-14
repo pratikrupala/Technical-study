@@ -1,0 +1,9 @@
+Steps to run program
+[1] ./fork
+	Then child and parent both will print pids of their own as well as each other.
+
+Example:
+
+[root@localhost 4.fork]# ./fork
+Parent: process id:[6357] and child id:[6358]
+Child: process id:[6358] and parent id:[6357]
