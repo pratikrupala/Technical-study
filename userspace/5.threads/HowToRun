@@ -1,0 +1,24 @@
+Steps to run program
+[1] ./threads
+        Then enter any five strings. Each thread will be created and print one of the string given by user.
+
+Example:
+
+[root@localhost 5.threads]# ./threads
+Enter message for thread 1:hi
+Enter message for thread 2:my
+Enter message for thread 3:name
+Enter message for thread 4:is
+Enter message for thread 5:pratik
+
+Message from user: hi
+
+Message from user: my
+
+Message from user: name
+
+Message from user: pratik
+
+Message from user: is
+
+[root@localhost 5.threads]# 
