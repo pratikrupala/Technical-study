@@ -1,0 +1,41 @@
+Steps to run program
+
+For mysync-nolock program:
+
+[1] ./mysync-nolock
+        Then enter any number for shared resource. Each thread will once increment and then decrement that shared resources.
+	At the end, it should print number same as entered by user. But without locking, it prints different number then original one.
+
+For mysync program:
+
+[1] ./mysync
+	Same as above but this time it will print same number as given by user as proper locking is provided.
+
+Example:
+
+For mysync-nolock program:
+
+[root@localhost semaphore]# ./mysync-nolock
+Enter the value of global variable:5
+Value of var at the end:4
+[root@localhost semaphore]# ./mysync-nolock
+Enter the value of global variable:5
+Value of var at the end:7
+[root@localhost semaphore]# ./mysync-nolock
+Enter the value of global variable:5
+Value of var at the end:5
+
+For mysync program:
+
+[root@localhost semaphore]# ./mysync
+Enter the value of global variable:5
+Value of var at the end:5
+[root@localhost semaphore]# ./mysync
+Enter the value of global variable:6
+Value of var at the end:6
+[root@localhost semaphore]# ./mysync
+Enter the value of global variable:7
+Value of var at the end:7
+[root@localhost semaphore]# ./mysync
+Enter the value of global variable:8
+Value of var at the end:8
