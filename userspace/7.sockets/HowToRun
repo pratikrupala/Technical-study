@@ -1,0 +1,18 @@
+Steps to run program
+
+To run server, just run it as ./server as shown in example. It will just wait for connection from clients.
+
+To run client, give IP address of server as shown in example. In output, it will printf message from server.
+
+Example:
+
+For server program:
+
+[root@localhost 7.sockets]# ./server
+New connection accepted
+
+
+For client program:
+
+[root@localhost 7.sockets]# ./client 127.0.0.1
+Hi there!! I accepted your connection
