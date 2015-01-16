@@ -1,0 +1,9 @@
+Steps to compile
+[1] make
+	To compile test programs server and client
+[2] make server
+	To compile just server
+[3]make client
+	To compile just client
+[4] make clean
+	To clean up everything.
