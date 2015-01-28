@@ -1,0 +1,5 @@
+Steps to compile
+[1] make
+	To compile test program
+[2] make clean
+	To clean up everything.
