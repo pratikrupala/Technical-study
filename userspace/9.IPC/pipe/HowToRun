@@ -1,0 +1,12 @@
+Steps to run program
+	This program contains two executable named producer and consumer. But user just needs to run producer.
+Producer itself calls consumer internally.
+
+	Producer writes some predefined string to pipe and consumer consumes that string and prints it.
+
+Example:
+
+[root@localhost pipe]# ./producer
+Parent written to a pipe: Hello World
+Consumer read: Hello World
+[root@localhost pipe]#
