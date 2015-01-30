@@ -1,0 +1,24 @@
+Steps to run program
+Two executables named consumer and producer are generated.
+First run consumer in background as shown below in example.
+Then start producer and keep giving input. Give "done" as input to finish both the processes.
+
+Example:
+
+[root@localhost src]# ./consumer &
+[1] 4236
+[root@localhost src]# ./producer
+Enter your input:hi
+You have given: hi
+Waiting for consumer to complete.
+Enter your input:hello
+You have given: hello
+Waiting for consumer to complete.
+Enter your input:world
+You have given: world
+Waiting for consumer to complete.
+Enter your input:done
+[root@localhost src]# You have given: done
+
+[1]+  Done                    ./consumer
+[root@localhost src]#

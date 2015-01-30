@@ -1,0 +1,9 @@
+Steps to compile
+[1] make
+	To compile consumer and producer both
+[2] make consumer
+	To generate only consumer executable
+[3] make producer
+	To generate only producer executable
+[4] make clean
+	To clean up everything.
