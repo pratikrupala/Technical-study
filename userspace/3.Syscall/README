@@ -1,0 +1,25 @@
+Steps to add a system call
+
+[1] mkdir ~/syscall
+[2] Copy kernel to ~/syscall
+	cp linux-3.17.4.tar.xz ~/syscall
+[3] cd ~/syscall
+[4] tar -xf linux-3.17.4.tar.xz
+[5] cd linux-3.17.4/
+[6] vim arch/x86/syscalls/syscall_64.tbl
+	Add below line in it:
+		321     64      mycall                  sys_mycall
+[7] vim include/linux/syscalls.h
+	Add below line in it:
+		asmlinkage long sys_mycall(void); 
+[8] mkdir mytest
+[9] Add new c file in mytest/
+[10] Add Makefile in mytest/
+[11] Add extarversion information as shown below:
+	EXTRAVERSION = .syscall_test
+[12] cp /boot/config-* .config
+[13] make oldconfig
+[14] make -j8
+[15] make modules_install
+[16] make install
+[17] reboot

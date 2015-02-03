@@ -1,0 +1,20 @@
+Steps to run program
+[1] ./test
+	This will not give any output. Use dmesg command to see the output.
+
+Example:
+
+[root@localhost 3.Syscall]# ./test
+[root@localhost 3.Syscall]#
+
+[root@localhost 3.Syscall]# dmesg
+.
+.
+.
+.
+[   20.711000] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm), (N/A)
+[   20.922594] IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+[   22.933980] e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[   22.935260] IPv6: ADDRCONF(NETDEV_CHANGE): ens33: link becomes ready
+[   98.460971] ######### KILLLER ##########: Hello from newly added syscall.
+[root@localhost 3.Syscall]# 
