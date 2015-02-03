@@ -1,0 +1,10 @@
+Steps to create rpm
+
+[1] mkdir <Any location to create rpm>/rpmbuild
+[2] mkdir -p {RPMS,SRPMS,SOURCES,BUILD,SPECS}
+[3] cp rpmtest.spec SPECS/
+[4] cp rpmtest.tar.gz SOURCES/
+[5] rpmbuild -ba SPECS/rpmtest.spec
+	This step will generate two RPMS listed below in RPMS/x86_64/ directory.
+		(1) rpmtest-1.0-1.x86_64.rpm
+		(2) rpmtest-debuginfo-1.0-1.x86_64.rpm

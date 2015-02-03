@@ -1,0 +1,22 @@
+Steps to run program
+/usr/bin/rpm-test
+	This will just print some predefined message from binary.
+
+Example:
+
+To install the RPM:
+[root@localhost rpmbuild]$ rpm -ivh RPMS/x86_64/rpmtest-1.0-1.x86_64.rpm
+Preparing...                          ################################# [100%]
+Updating / installing...
+   1:rpmtest-1.0-1                    ################################# [100%]
+[root@localhost rpmbuild]$
+
+To run the binary:
+[root@localhost rpmbuild]$ /usr/bin/rpm-test
+Hello from test program.
+[root@localhost rpmbuild]$
+
+To uninstall the RPM:
+[root@localhost rpmbuild]$ rpm -e rpmtest
+[root@localhost rpmbuild]$
+
