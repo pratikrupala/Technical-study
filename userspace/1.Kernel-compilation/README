@@ -1,0 +1,9 @@
+Steps followed for kernel(linux-3.17.4) compilation on CentOS 7.
+[1] Download kernel tar linux-3.17.4.tar.xz from kernel.org.
+[2] Extract it to some separate directory.
+[3] cp /boot/config-3.10.0-123.el7.x86_64 to kernel source directory as .config.
+[4] make oldconfig (Choose default settings for newly added configs in newer kernel)
+[5] make -j8
+[6] make modules
+[7] make modules_install
+[8] make install
