@@ -1,0 +1,19 @@
+Steps to run program
+
+[1] ./mysync
+	Enter any 5 values which will need protection from multithread environment. Program will do various type of manipulations on them and then reset the value of all 5 variables as provided by user. At the end, program prints all the variables and they should be as provided by user.
+
+Example:
+
+[root@localhost counting-semaphore]# ./mysync
+Enter the value for index 0 in global variable:5
+Enter the value for index 1 in global variable:5
+Enter the value for index 2 in global variable:5
+Enter the value for index 3 in global variable:5
+Enter the value for index 4 in global variable:5
+Value of var at the end at index 0: 5
+Value of var at the end at index 1: 5
+Value of var at the end at index 2: 5
+Value of var at the end at index 3: 5
+Value of var at the end at index 4: 5
+[root@localhost counting-semaphore]#
