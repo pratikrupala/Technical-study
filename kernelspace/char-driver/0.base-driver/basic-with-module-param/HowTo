@@ -1,0 +1,9 @@
+Step to run program
+[1] insmod mymodule.ko
+	To insert mymodule.ko module with deafault module parameters. After insertion optput of dmesg command can be verified to see messages printed by this module which prints module parameter's default values.
+
+[2] insmod mymodule.ko myparam = 5
+	To insert mymodule.ko module with module parameter myparam assigned value of 5. After insertion optput of dmesg command can be verified to see messages printed by this module which prints value of myparam as 5 and default values for rest of the parameters.
+
+[3] insmod mydriver.ko myparam=5 myarray=5,6,7,8,9
+	 To insert mymodule.ko module with some specified values assigned to module parameters myparam and myarray. After insertion optput of dmesg command can be verified to see messages printed by this module as given on command line.

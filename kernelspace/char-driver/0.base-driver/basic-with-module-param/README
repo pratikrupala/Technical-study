@@ -1,0 +1,6 @@
+Steps for compilation
+[1] make
+	To generate mymodule.ko kernel module
+[2] make clean
+	To clean up everthing
+	
