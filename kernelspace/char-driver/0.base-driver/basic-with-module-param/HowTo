@@ -7,3 +7,63 @@ Step to run program
 
 [3] insmod mydriver.ko myparam=5 myarray=5,6,7,8,9
 	 To insert mymodule.ko module with some specified values assigned to module parameters myparam and myarray. After insertion optput of dmesg command can be verified to see messages printed by this module as given on command line.
+
+
+Example:
+
+[1] insmod mymodule.ko
+
+[root@localhost basic-with-module-param]# insmod mymodule.ko
+[root@localhost basic-with-module-param]# dmesg
+.
+.
+.
+[ 2049.070415] Killer says HI!!!:-)...
+[ 2049.070428] USER has sent 1 to killer
+[ 2049.070431] User has sent 0 arguments
+[ 2049.070433] User has sent array value at index 0: 0
+[ 2049.070435] User has sent array value at index 1: 1
+[ 2049.070437] User has sent array value at index 2: 2
+[ 2049.070438] User has sent array value at index 3: 3
+[ 2049.070440] User has sent array value at index 4: 4
+[ 2076.380262] Killer says BYE!!!...
+.
+.
+[2] insmod mymodule.ko myparam = 5
+[root@localhost basic-with-module-param]# insmod mymodule.ko myparam = 5
+[root@localhost basic-with-module-param]# dmesg
+.
+.
+.
+[ 2210.144607] Killer says HI!!!:-)...
+[ 2210.144620] USER has sent 5 to killer
+[ 2210.144623] User has sent 0 arguments
+[ 2210.144625] User has sent array value at index 0: 0
+[ 2210.144627] User has sent array value at index 1: 1
+[ 2210.144629] User has sent array value at index 2: 2
+[ 2210.144631] User has sent array value at index 3: 3
+[ 2210.144632] User has sent array value at index 4: 4
+[ 2216.177892] Killer says BYE!!!...
+.
+.
+.
+
+[3] insmod mydriver.ko myparam=5 myarray=5,6,7,8,9
+
+[root@localhost basic-with-module-param]# insmod mydriver.ko myparam=5 myarray=5,6,7,8,9
+[root@localhost basic-with-module-param]# dmesg
+.
+.
+.
+[ 2178.672701] Killer says HI!!!:-)...
+[ 2178.672709] USER has sent 5 to killer
+[ 2178.672711] User has sent 5 arguments
+[ 2178.672713] User has sent array value at index 0: 5
+[ 2178.672715] User has sent array value at index 1: 6
+[ 2178.672717] User has sent array value at index 2: 7
+[ 2178.672719] User has sent array value at index 3: 8
+[ 2178.672721] User has sent array value at index 4: 9
+[ 2198.026207] Killer says BYE!!!...
+.
+.
+.
