@@ -1,0 +1,5 @@
+Steps for compilation
+[1] make
+	To generate module-one.ko and module-two.ko kernel modules
+[2] make clean
+	To clean up everthing
