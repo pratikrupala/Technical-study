@@ -9,6 +9,9 @@ Step to run program
 	 To insert mymodule.ko module with some specified values assigned to module parameters myparam and myarray. After insertion optput of dmesg command can be verified to see messages printed by this module as given on command line.
 
 
+[4] rmmod mydriver
+	To remove mymodule.ko from kernel. It prints cleanup message from this module.
+
 Example:
 
 [1] insmod mymodule.ko
@@ -26,10 +29,19 @@ Example:
 [ 2049.070437] User has sent array value at index 2: 2
 [ 2049.070438] User has sent array value at index 3: 3
 [ 2049.070440] User has sent array value at index 4: 4
+.
+.
+[root@localhost basic-with-module-param]# rmmod mymodule
+[root@localhost basic-with-module-param]# dmesg
+.
+.
 [ 2076.380262] Killer says BYE!!!...
 .
 .
+
+
 [2] insmod mymodule.ko myparam = 5
+
 [root@localhost basic-with-module-param]# insmod mymodule.ko myparam = 5
 [root@localhost basic-with-module-param]# dmesg
 .
@@ -43,8 +55,14 @@ Example:
 [ 2210.144629] User has sent array value at index 2: 2
 [ 2210.144631] User has sent array value at index 3: 3
 [ 2210.144632] User has sent array value at index 4: 4
-[ 2216.177892] Killer says BYE!!!...
 .
+.
+
+[root@localhost basic-with-module-param]# rmmod mymodule
+[root@localhost basic-with-module-param]# dmesg
+.
+.
+[ 2216.177892] Killer says BYE!!!...
 .
 .
 
@@ -63,7 +81,13 @@ Example:
 [ 2178.672717] User has sent array value at index 2: 7
 [ 2178.672719] User has sent array value at index 3: 8
 [ 2178.672721] User has sent array value at index 4: 9
-[ 2198.026207] Killer says BYE!!!...
 .
+.
+
+[root@localhost basic-with-module-param]# rmmod mymodule
+[root@localhost basic-with-module-param]# dmesg
+.
+.
+[ 2198.026207] Killer says BYE!!!...
 .
 .
