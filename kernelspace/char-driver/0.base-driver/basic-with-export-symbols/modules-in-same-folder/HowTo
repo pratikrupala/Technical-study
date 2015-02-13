@@ -10,8 +10,6 @@ Step to run program
 
 Example:
 
-[1] insmod mymodule.ko
-
 [root@localhost modules-in-same-folder]# insmod module-two.ko
 [root@localhost modules-in-same-folder]# insmod module-one.ko
 [root@localhost modules-in-same-folder]# dmesg
